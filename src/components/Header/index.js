@@ -1,7 +1,7 @@
-import { HeaderContainer, NavButton, GroupButton, Button, NavTab, TabButton } from './styles';
+import { HeaderContainer, NavButton, GroupButton, Button, NavTab } from './styles';
 
 import LogoPNG from '../../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
 
@@ -15,12 +15,15 @@ export default function Header() {
         </GroupButton>
       </NavButton>
       <NavTab>
-        <Link to="/snack">
-          <TabButton>Lanches</TabButton>
-        </Link>
-        <Link to="/drink">
-          <TabButton>Bebidas</TabButton>
-        </Link>
+        <NavLink exact to="/">
+          Início
+        </NavLink>
+        <NavLink exact to="/snack">
+          Lanches
+        </NavLink>
+        <NavLink exact to="/drink">
+          Bebidas
+        </NavLink>
       </NavTab>
     </HeaderContainer>
   );

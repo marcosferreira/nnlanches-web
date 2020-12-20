@@ -18,7 +18,8 @@ export const HeaderContainer = styled.header`
 `;
 
 
-export const NavButton = styled.nav``;
+export const NavButton = styled.nav`
+`;
 
 export const GroupButton = styled.div``;
 
@@ -26,24 +27,35 @@ export const Button = styled.div``;
 
 export const NavTab = styled.nav`
   width: 100%;
-`;
+  display: flex;
 
-export const TabButton = styled.button`
-  width: 50%;
-  height: 50px;
-
-  border: none;
-  border-radius: 0;
-  background-color: #FEC024;
-
-  color: #FFF;
-  font-size: 1.2rem;
-
-  &:active {
+  .active {
     background-color: #FFD15C;
   }
 
-  &:focus {
-    background-color: #FFD15C;
+  a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 0;
+    background-color: #FEC024;
+
+    color: #FFF;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+
+
+    &:focus {
+      background-color: #FFD15C;
+    }
+
+    &:active {
+      background-color: #FFD15C;
+    }
   }
 `;
