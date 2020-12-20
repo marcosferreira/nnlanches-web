@@ -1,8 +1,10 @@
 import { HeaderContainer, NavButton, GroupButton, Button, NavTab, TabButton } from './styles';
 
 import LogoPNG from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
+
   return (
     <HeaderContainer>
       <NavButton>
@@ -13,8 +15,12 @@ export default function Header() {
         </GroupButton>
       </NavButton>
       <NavTab>
-        <TabButton>Lanches</TabButton>
-        <TabButton>Bebidas</TabButton>
+        <Link to="/snack">
+          <TabButton>Lanches</TabButton>
+        </Link>
+        <Link to="/drink">
+          <TabButton>Bebidas</TabButton>
+        </Link>
       </NavTab>
     </HeaderContainer>
   );

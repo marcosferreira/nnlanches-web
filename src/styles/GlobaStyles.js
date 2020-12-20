@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -14,3 +14,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const Container = styled.main`
+  height: calc(100vh - 140px);
+  padding: 10px;
+
+  background-color: #F4F4F4;
+`;

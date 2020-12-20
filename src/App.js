@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './pages/Home';
+
+import Routes from './routes';
+
 import { GlobalStyle } from './styles/GlobaStyles';
 
 function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Header />
-      <Home />
+      <Routes />
     </React.Fragment>
   );
 }

@@ -42,6 +42,7 @@ export const TabButton = styled.button`
   &:active {
     background-color: #FFD15C;
   }
+
   &:focus {
     background-color: #FFD15C;
   }

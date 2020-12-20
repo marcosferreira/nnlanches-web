@@ -1,9 +1,9 @@
 import { Container } from '../../styles/GlobaStyles';
 
-export default function Home() {
+export default function Snack() {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>Snack</h1>
     </Container>
   );
 }
