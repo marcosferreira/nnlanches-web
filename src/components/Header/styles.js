@@ -19,11 +19,25 @@ export const HeaderContainer = styled.header`
 
 
 export const NavButton = styled.nav`
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-export const GroupButton = styled.div``;
+export const GroupButton = styled.div`
+  padding: 0 20px;
+`;
 
-export const Button = styled.div``;
+export const Button = styled.button`
+  padding-left: 20px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+`;
 
 export const NavTab = styled.nav`
   width: 100%;

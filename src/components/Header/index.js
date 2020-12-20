@@ -1,3 +1,5 @@
+import { FiShoppingBag, FiMenu } from 'react-icons/fi';
+
 import { HeaderContainer, NavButton, GroupButton, Button, NavTab } from './styles';
 
 import LogoPNG from '../../assets/logo.png';
@@ -10,8 +12,12 @@ export default function Header() {
       <NavButton>
         <img src={LogoPNG} alt="logo" />
         <GroupButton>
-          <Button></Button>
-          <Button></Button>
+          <Button>
+            <FiShoppingBag size={26} color="white" />
+          </Button>
+          <Button>
+            <FiMenu size={26} color="white" />
+          </Button>
         </GroupButton>
       </NavButton>
       <NavTab>
