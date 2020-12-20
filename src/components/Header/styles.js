@@ -27,16 +27,26 @@ export const NavButton = styled.nav`
 `;
 
 export const GroupButton = styled.div`
-  padding: 0 20px;
+  margin-right: 20px;
+  margin-left: 10px;
 `;
 
 export const Button = styled.button`
-  padding-left: 20px;
+  padding: 10px;
 
   background-color: transparent;
   border: none;
+  border-radius: 4px;
 
   cursor: pointer;
+
+  &:active {
+    background-color: #FFD15C;
+  }
+
+  &:focus {
+    background-color: #FFD15C;
+  }
 `;
 
 export const NavTab = styled.nav`
