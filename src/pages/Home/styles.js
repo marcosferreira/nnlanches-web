@@ -1,43 +1,30 @@
 import styled from 'styled-components';
 
-export const CarouselStories = styled.div`
+
+export const CardDetach = styled.div`
   width: 100%;
+  height: 300px;
+  margin: 10px 0;
+  background-color: #FFF;
+  border-radius: 8px;
+  position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ul {
-    width: 100%;
-    list-style: none;
-
-    overflow-y: auto;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-
-    display: flex;
-    flex-direction: row;
-
-    li {
-      width: 60px;
-      height: 60px;
-      margin: 5px;
-    }
-  }
+  overflow: hidden;
 
   img {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
-
-    border-radius: 30px;
-    border: 2px solid #CCC;
   }
 `;
 
-export const CarouselButton = styled.button`
-  padding: 5px;
-
-  background-color: transparent;
-  border: none;
+export const CardFooter = styled.div`
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  background-color: rgba(20,20,20, 0.5);
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+  text-shadow: 2px 2px 2px #333;
 `;
