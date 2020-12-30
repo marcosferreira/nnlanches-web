@@ -6,7 +6,11 @@ const CACHE_NAME = "nn-lanches";
 
 const urlsToCache = [
   "/",
+  "/favicon.png",
+  "/manifest.json",
   "/static/js/bundle.js",
+  "/static/js/0.chunk.js",
+  "/static/js/main.chunk.js"
 ];
 
 // A primeira vez que o usuário inicia a PWA, 'install' é acionado.
