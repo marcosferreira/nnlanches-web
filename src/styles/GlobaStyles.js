@@ -42,7 +42,9 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.main`
-  height: calc(100vh - 140px);
+  height: 100%;
+  min-height: calc(100vh - 140px);
+
   padding: 10px;
 
   background-color: #F4F4F4;
