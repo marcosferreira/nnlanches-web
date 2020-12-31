@@ -8,6 +8,7 @@ import {
   CardDetach,
   CardFooter,
   CardGroup,
+  CardGroupTitle,
   CardProduct,
   CardProductBody,
   CardProductFooter,
@@ -34,6 +35,7 @@ export default function Home() {
           </CardFooter>
         </CardDetach>
 
+        <CardGroupTitle>Os mais pedidos</CardGroupTitle>
         <CardGroup>
           <CardProduct>
             <CardProductBody>
