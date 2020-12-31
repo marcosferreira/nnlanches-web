@@ -1,12 +1,20 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import Roboto from '../assets/fonts/Roboto/Roboto-Regular.ttf';
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: Roboto ;
+    src: url(${Roboto}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
     scrollbar-width: none;
   }
 

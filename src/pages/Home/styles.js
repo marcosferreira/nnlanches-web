@@ -40,8 +40,7 @@ export const CardGroup = styled.div`
 
 export const CardGroupTitle = styled.h2`
   font-size: 1.4rem;
-  color: #555;
-  border-bottom: 1px solid #888;
+  color: #333;
   padding-bottom: 2px;
   margin-bottom: 5px;
 `;
@@ -72,6 +71,14 @@ export const CardProductFooter = styled.div`
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
   p {
-    font-size: 0.8rem;
+    font-size: 14px;
+    font-weight: 700;
+    color: #004AE9;
+    font-family: Roboto;
+  }
+  small {
+    font-size: 18px;
+    font-weight: 800;
+    color: #333333;
   }
 `;
