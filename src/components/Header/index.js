@@ -1,12 +1,17 @@
-import { FiShoppingBag, FiMenu } from 'react-icons/fi';
+import { FiShoppingBag, FiMenu } from "react-icons/fi";
 
-import { HeaderContainer, NavButton, GroupButton, Button, NavTab } from './styles';
+import {
+  HeaderContainer,
+  NavButton,
+  GroupButton,
+  Button,
+  NavTab,
+} from "./styles";
 
-import LogoPNG from '../../assets/logo.png';
-import { NavLink } from 'react-router-dom';
+import LogoPNG from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
-
   return (
     <HeaderContainer>
       <NavButton>
@@ -21,13 +26,13 @@ export default function Header() {
         </GroupButton>
       </NavButton>
       <NavTab>
-        <NavLink exact to="/">
+        <NavLink exact to="/nnlanches-web">
           Início
         </NavLink>
-        <NavLink exact to="/snack">
+        <NavLink exact to="/nnlanches-web/snack">
           Lanches
         </NavLink>
-        <NavLink exact to="/drink">
+        <NavLink exact to="/nnlanches-web/drink">
           Bebidas
         </NavLink>
       </NavTab>

@@ -11,12 +11,12 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/snack" component={Snack} />
-        <Route exact path="/drink" component={Drink} />
+        <Route exact path="/nnlanches-web" component={Home} />
+        <Route exact path="/nnlanches-web/snack" component={Snack} />
+        <Route exact path="/nnlanches-web/drink" component={Drink} />
 
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
+        <Route exact path="/nnlanches-web/login" component={Login} />
+        <Route exact path="/nnlanches-web/register" component={Register} />
       </Switch>
     </BrowserRouter>
   );
