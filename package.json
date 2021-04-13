@@ -1,6 +1,6 @@
 {
   "name": "nnlanches-web",
-  "homepage": "https://marcosferreira.github.io/nnlanches/",
+  "homepage": "https://marcosferreira.github.io/nnlanches-web/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
