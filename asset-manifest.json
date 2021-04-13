@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/nnlanches/static/js/main.a799349d.chunk.js",
+    "main.js.map": "/nnlanches/static/js/main.a799349d.chunk.js.map",
+    "runtime-main.js": "/nnlanches/static/js/runtime-main.2b7c3175.js",
+    "runtime-main.js.map": "/nnlanches/static/js/runtime-main.2b7c3175.js.map",
+    "static/js/2.0aee5ed0.chunk.js": "/nnlanches/static/js/2.0aee5ed0.chunk.js",
+    "static/js/2.0aee5ed0.chunk.js.map": "/nnlanches/static/js/2.0aee5ed0.chunk.js.map",
+    "static/js/3.1787bb91.chunk.js": "/nnlanches/static/js/3.1787bb91.chunk.js",
+    "static/js/3.1787bb91.chunk.js.map": "/nnlanches/static/js/3.1787bb91.chunk.js.map",
+    "index.html": "/nnlanches/index.html",
+    "static/js/2.0aee5ed0.chunk.js.LICENSE.txt": "/nnlanches/static/js/2.0aee5ed0.chunk.js.LICENSE.txt",
+    "static/media/Roboto-Regular.03523cf5.ttf": "/nnlanches/static/media/Roboto-Regular.03523cf5.ttf",
+    "static/media/logo.ad849596.png": "/nnlanches/static/media/logo.ad849596.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b7c3175.js",
+    "static/js/2.0aee5ed0.chunk.js",
+    "static/js/main.a799349d.chunk.js"
+  ]
+}
