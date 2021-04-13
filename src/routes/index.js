@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Home from '../pages/Home';
-import Snack from '../pages/Snack';
-import Drink from '../pages/Drink';
+import Home from "../pages/Home";
+import Snack from "../pages/Snack";
+import Drink from "../pages/Drink";
 
-import Login from '../pages/Login';
-import Register from '../pages/Register';
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 export default function Routes() {
   return (
