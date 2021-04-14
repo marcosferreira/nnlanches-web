@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
+export const HeaderWrapper = styled.header`
   height: 140px;
 
   display: flex;
@@ -8,8 +8,8 @@ export const HeaderContainer = styled.header`
   align-items: flex-start;
   justify-content: space-between;
 
-  background-color: #FEC024;
-  color: #FFF;
+  background-color: #eeb014;
+  color: #fff;
 
   img {
     width: 100px;
@@ -17,6 +17,12 @@ export const HeaderContainer = styled.header`
   }
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fec024;
+`;
 
 export const NavButton = styled.nav`
   width: 100%;
@@ -41,11 +47,11 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:active {
-    background-color: #FFD15C;
+    background-color: #ffd15c;
   }
 
   &:focus {
-    background-color: #FFD15C;
+    background-color: #ffd15c;
   }
 `;
 
@@ -54,7 +60,7 @@ export const NavTab = styled.nav`
   display: flex;
 
   .active {
-    background-color: #FFD15C;
+    background-color: #ffd15c;
   }
 
   a {
@@ -66,20 +72,19 @@ export const NavTab = styled.nav`
 
     border: none;
     border-radius: 0;
-    background-color: #FEC024;
+    background-color: #fec024;
 
-    color: #FFF;
+    color: #fff;
     font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
 
-
     &:focus {
-      background-color: #FFD15C;
+      background-color: #ffd15c;
     }
 
     &:active {
-      background-color: #FFD15C;
+      background-color: #ffd15c;
     }
   }
 `;

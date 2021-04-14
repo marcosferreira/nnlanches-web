@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import Roboto from '../assets/fonts/Roboto/Roboto-Regular.ttf';
+import styled, { createGlobalStyle } from "styled-components";
+import Roboto from "../assets/fonts/Roboto/Roboto-Regular.ttf";
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -45,15 +45,18 @@ export const GlobalStyle = createGlobalStyle`
 
 
   body {
-    background-color: #FEC024;
+    background-color: #DDD;
   }
 `;
 
 export const Container = styled.main`
+  width: 100%;
+  max-width: 900px;
   height: 100%;
   min-height: calc(100vh - 140px);
 
+  margin: 0 auto;
   padding: 10px;
 
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 `;
