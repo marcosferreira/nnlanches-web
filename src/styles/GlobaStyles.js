@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.main`
   width: 100%;
-  max-width: 900px;
+  max-width: 1180px;
   height: 100%;
   min-height: calc(100vh - 140px);
 

@@ -35,7 +35,7 @@ export default function Home() {
           </CardFooter>
         </CardDetach>
 
-        <CardGroupTitle>+ Pedidos</CardGroupTitle>
+        <CardGroupTitle>Os mais pedidos</CardGroupTitle>
         <CardGroup>
           <CardProduct>
             <CardProductBody>
@@ -45,9 +45,7 @@ export default function Home() {
               />
             </CardProductBody>
             <CardProductFooter>
-              <p>
-                Descrição do produto
-              </p>
+              <p>Descrição do produto</p>
               {/* <small>R$ 0,00</small> */}
             </CardProductFooter>
           </CardProduct>
@@ -59,9 +57,7 @@ export default function Home() {
               />
             </CardProductBody>
             <CardProductFooter>
-              <p>
-                Descrição do produto
-              </p>
+              <p>Descrição do produto</p>
               {/* <small>R$ 0,00</small> */}
             </CardProductFooter>
           </CardProduct>
@@ -73,9 +69,7 @@ export default function Home() {
               />
             </CardProductBody>
             <CardProductFooter>
-              <p>
-                Descrição do produto
-              </p>
+              <p>Descrição do produto</p>
               {/* <small>R$ 0,00</small> */}
             </CardProductFooter>
           </CardProduct>
@@ -87,9 +81,7 @@ export default function Home() {
               />
             </CardProductBody>
             <CardProductFooter>
-              <p>
-                Descrição do produto
-              </p>
+              <p>Descrição do produto</p>
               {/* <small>R$ 0,00</small> */}
             </CardProductFooter>
           </CardProduct>

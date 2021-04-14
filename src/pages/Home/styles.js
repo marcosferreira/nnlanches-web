@@ -1,11 +1,10 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const CardDetach = styled.div`
   width: 100%;
   height: 300px;
   margin: 10px 0;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 8px;
   position: relative;
 
@@ -22,13 +21,12 @@ export const CardFooter = styled.div`
   width: 100%;
   min-height: 100px;
   padding: 10px;
-  background-color: rgba(20,20,20, 0.5);
+  background-color: rgba(20, 20, 20, 0.5);
   position: absolute;
   bottom: 0;
-  color: #FFF;
+  color: #fff;
   text-shadow: 2px 2px 2px #333;
 `;
-
 
 export const CardGroup = styled.div`
   display: grid;
@@ -50,9 +48,9 @@ export const CardProduct = styled.div`
   height: 200px;
   position: relative;
   overflow: hidden;
-  background-color: #CCC;
+  background-color: #ccc;
   border-radius: 4px;
-  box-shadow: 1px 1px 2px #CCC;
+  box-shadow: 1px 1px 2px #ccc;
 `;
 
 export const CardProductBody = styled.div`
@@ -69,11 +67,11 @@ export const CardProductFooter = styled.div`
   padding: 5px;
   position: absolute;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   p {
     font-size: 14px;
     font-weight: 700;
-    color: #004AE9;
+    color: #fff;
     font-family: Roboto;
   }
   small {
