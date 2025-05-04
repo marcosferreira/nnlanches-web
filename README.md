@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# NN Lanches - Aplicação Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação web para o sistema de pedidos do NN Lanches, permitindo que clientes visualizem o cardápio, façam pedidos e acompanhem o status de entrega.
 
-## Available Scripts
+## 🚀 Tecnologias
 
-In the project directory, you can run:
+- [React 18](https://reactjs.org/)
+- [Styled Components 6](https://styled-components.com/)
+- [React Router 6](https://reactrouter.com/)
+- [React Icons 4](https://react-icons.github.io/react-icons/)
 
-### `yarn start`
+## 📋 Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js (versão 14.x ou superior)
+- Yarn (ou npm)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔧 Instalação
 
-### `yarn test`
+Clone o repositório:
+```bash
+git clone https://github.com/marcosferreira/nnlanches-web.git
+cd nnlanches-web
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instale as dependências:
+```bash
+yarn install
+```
 
-### `yarn build`
+## ⚙️ Executando a aplicação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Estrutura do projeto
 
-### `yarn eject`
+```
+src/
+├── assets/      # Imagens e recursos estáticos
+├── components/  # Componentes reutilizáveis
+├── pages/       # Páginas da aplicação
+├── services/    # Serviços e APIs
+├── styles/      # Estilos globais e temas
+└── utils/       # Funções utilitárias
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🛠️ Scripts disponíveis
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `yarn start`: Inicia o servidor de desenvolvimento
+- `yarn build`: Gera a versão de produção
+- `yarn test`: Executa os testes
+- `yarn deploy`: Publica a aplicação no GitHub Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📱 Funcionalidades
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Visualização do cardápio de lanches e bebidas
+- Carrinho de compras
+- Cadastro e login de usuários
+- Acompanhamento de pedidos
+- Histórico de compras
 
-## Learn More
+## 📱 PWA (Progressive Web App)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esta aplicação tem recursos de PWA, permitindo que seja instalada em dispositivos móveis e funcione offline.

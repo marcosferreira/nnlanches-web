@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Routes from './routes';
+import AppRoutes from './routes';
 
 import { GlobalStyle } from './styles/GlobaStyles';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Routes />
+      <AppRoutes />
     </React.Fragment>
   );
 }

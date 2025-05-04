@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Snack from "../pages/Snack";
@@ -7,17 +7,17 @@ import Drink from "../pages/Drink";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 
-export default function Routes() {
+export default function AppRoutes() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/nnlanches-web" component={Home} />
-        <Route exact path="/nnlanches-web/snack" component={Snack} />
-        <Route exact path="/nnlanches-web/drink" component={Drink} />
+      <Routes>
+        <Route path="/nnlanches-web" element={<Home />} />
+        <Route path="/nnlanches-web/snack" element={<Snack />} />
+        <Route path="/nnlanches-web/drink" element={<Drink />} />
 
-        <Route exact path="/nnlanches-web/login" component={Login} />
-        <Route exact path="/nnlanches-web/register" component={Register} />
-      </Switch>
+        <Route path="/nnlanches-web/login" element={<Login />} />
+        <Route path="/nnlanches-web/register" element={<Register />} />
+      </Routes>
     </BrowserRouter>
   );
 }

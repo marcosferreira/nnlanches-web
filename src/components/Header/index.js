@@ -28,13 +28,23 @@ export default function Header() {
           </GroupButton>
         </NavButton>
         <NavTab>
-          <NavLink exact to="/nnlanches-web">
+          <NavLink 
+            to="/nnlanches-web"
+            className={({ isActive }) => isActive ? "active" : ""}
+            end
+          >
             Início
           </NavLink>
-          <NavLink exact to="/nnlanches-web/snack">
+          <NavLink 
+            to="/nnlanches-web/snack"
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
             Lanches
           </NavLink>
-          <NavLink exact to="/nnlanches-web/drink">
+          <NavLink 
+            to="/nnlanches-web/drink"
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
             Bebidas
           </NavLink>
         </NavTab>
