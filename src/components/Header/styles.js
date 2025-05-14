@@ -1,19 +1,26 @@
 import styled from "styled-components";
+import { colors, typography, shapes, mixins } from "../../styles/designSystem";
 
 export const HeaderWrapper = styled.header`
-  height: 140px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-
-  background-color: #eeb014;
-  color: #fff;
+  background-color: ${colors.primary.main};
+  color: ${colors.primary.contrastText};
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   img {
-    width: 100px;
-    margin-left: 10px;
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 `;
 
@@ -21,70 +28,109 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  background-color: #fec024;
+  padding: 0 16px;
+`;
+
+export const TopHeader = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+`;
+
+export const LocationSelector = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: ${shapes.borderRadius.medium};
+  cursor: pointer;
+  ${mixins.transition()}
+  
+  span {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+`;
+
+export const UserAvatar = styled.div`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
 `;
 
 export const NavButton = styled.nav`
   width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  ${mixins.flexBetween}
+  padding: 8px 0;
 `;
 
 export const GroupButton = styled.div`
-  margin-right: 20px;
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 `;
 
 export const Button = styled.button`
   padding: 10px;
-
   background-color: transparent;
   border: none;
-  border-radius: 4px;
-
+  border-radius: ${shapes.borderRadius.medium};
   cursor: pointer;
+  ${mixins.transition()}
 
-  &:active {
-    background-color: #ffd15c;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
-  &:focus {
-    background-color: #ffd15c;
+  &:active, &:focus {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 `;
 
 export const NavTab = styled.nav`
   width: 100%;
-  display: flex;
+  display: none;
 
   .active {
-    background-color: #ffd15c;
+    background-color: ${colors.primary.dark};
+    font-weight: ${typography.button.fontWeight};
   }
 
   a {
     width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    height: 40px;
+    ${mixins.flexCenter}
     border: none;
     border-radius: 0;
-    background-color: #fec024;
-
-    color: #fff;
-    font-size: 1.2rem;
+    background-color: ${colors.primary.main};
+    color: ${colors.primary.contrastText};
+    font-size: 1rem;
     text-align: center;
     text-decoration: none;
+    ${mixins.transition()}
 
-    &:focus {
-      background-color: #ffd15c;
+    &:hover {
+      background-color: ${colors.primary.light};
     }
 
-    &:active {
-      background-color: #ffd15c;
+    &:focus, &:active {
+      background-color: ${colors.primary.dark};
     }
   }
 `;

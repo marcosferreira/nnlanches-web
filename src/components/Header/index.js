@@ -1,8 +1,11 @@
-import { FiShoppingBag, FiMenu } from "react-icons/fi";
+import { FiShoppingBag, FiMenu, FiMapPin } from "react-icons/fi";
 
 import {
   HeaderWrapper,
   Container,
+  TopHeader,
+  LocationSelector,
+  UserAvatar,
   NavButton,
   GroupButton,
   Button,
@@ -16,17 +19,20 @@ export default function Header() {
   return (
     <HeaderWrapper>
       <Container>
-        <NavButton>
-          <img src={LogoPNG} alt="logo" />
-          <GroupButton>
-            <Button>
-              <FiShoppingBag size={26} color="white" />
-            </Button>
-            <Button>
-              <FiMenu size={26} color="white" />
-            </Button>
-          </GroupButton>
-        </NavButton>
+        <TopHeader>
+          <NavButton>
+            <img src={LogoPNG} alt="logo" />
+            <GroupButton>
+              <LocationSelector>
+                <FiMapPin size={16} color="white" />
+                <span>California, US</span>
+              </LocationSelector>
+              <UserAvatar>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Usuário" />
+              </UserAvatar>
+            </GroupButton>
+          </NavButton>
+        </TopHeader>
         <NavTab>
           <NavLink 
             to="/nnlanches-web"
